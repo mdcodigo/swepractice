@@ -84,6 +84,8 @@ class TrieNode{
     }
 }
 
+export{TrieNode};
+
 ///////// PROGRAM ////////////
 
 let trieTree = new TrieNode();
@@ -99,7 +101,7 @@ trieTree.addWord("GODNESS");
 trieTree.addWord("TEST");
 
 
-arr = new Array();
+let arr = new Array();
 trieTree.postOrder(arr);
 
 console.log("Postorder: ",arr);
